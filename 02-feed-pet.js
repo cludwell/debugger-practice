@@ -7,10 +7,12 @@ of foods that you have fed that pet.
 
 */
 
-function feedPet(name) {
+const feedPet = (name) => {
   const foods = [];
-  return (food) => {
-    return "Fed " + name + " " + foods.push(food) + ".";
+  let statement = `Fed ${name} `
+  return petFeeding = (food) => {
+    foods.push(food)
+    return (statement + foods.join(', ')) + "."
   }
 }
 
