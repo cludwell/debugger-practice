@@ -5,18 +5,20 @@ rating.
 */
 debugger
 function cutestCat(cats) {
-  let cutest;
+  let thelastcat = cats[cats.length-1];
   let i = 0;
 debugger
   while (i < cats.length) {
-    const cat = cats[i];
-    if (cat > cutest) {
-      cutest = cat.cuteness;
+    let cat = cats[i];
+    debugger;
+    if (cat.cuteness > thelastcat.cuteness) {
+      thelastcat = cat;
+
     }
     i++;
   }
 debugger
-  return cutest;
+  return thelastcat;
 }
 
 const cats = [
